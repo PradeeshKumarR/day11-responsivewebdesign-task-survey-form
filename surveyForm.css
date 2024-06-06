@@ -1,0 +1,115 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.required {
+    color: red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 50%;
+}
+
+.fname {
+    width: 95%;
+    margin-right: 5%
+}
+
+.lname {
+    width: 95%;
+    margin-left: 5%;
+}
+
+.lname-text {
+    margin-left: 5%;
+}
+
+#email {
+    width: 50%;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+th {
+    text-align: left;
+    font-weight: 100;
+    width: 16.67%;
+    padding:10px;
+}
+
+td {
+    text-align: center;
+    width: 16.67%;
+    padding:10px;
+}
+
+.table-heading {
+    text-align: center;
+}
+
+#comment {
+    width: 100%;
+}
+
+textarea{
+    border: 2px solid #ccc;
+}
+
+.button {
+    padding: 15px;
+    border: 2px solid #ccc;
+}
